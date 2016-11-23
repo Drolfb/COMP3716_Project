@@ -1,0 +1,56 @@
+package main.gui;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import java.awt.FlowLayout;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+public class ManagerPanel {
+
+	private JFrame frame;
+	private JTextField textField;
+
+	/**
+	 * Launch the application.
+	 */
+//	public static void main(String[] args) {
+//		EventQueue.invokeLater(new Runnable() {
+//			public void run() {
+//				try {
+//					ManagerPanel window = new ManagerPanel();
+//					window.frame.setVisible(true);
+//				} catch (Exception e) {
+//					e.printStackTrace();
+//				}
+//			}
+//		});
+//	}
+
+	/**
+	 * Create the application.
+	 */
+	public ManagerPanel() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.setBounds(100, 100, 450, 300);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		JLabel lblTournamentName = new JLabel("Tournament Name:");
+		lblTournamentName.setBounds(12, 12, 141, 15);
+		frame.getContentPane().add(lblTournamentName);
+		
+		textField = new JTextField();
+		textField.setBounds(159, 10, 277, 19);
+		frame.getContentPane().add(textField);
+		textField.setColumns(10);
+	}
+}
