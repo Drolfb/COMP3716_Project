@@ -70,38 +70,6 @@ public class VolleyBallPanel extends JPanel {
                 dropDownMenu(dummyOptions);
             }
         });
-        managerButton = new JButton("Manager");
-        managerButton.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseClicked(MouseEvent e) {
-                userType = USER.MANAGER;
-                dropDownMenu(dummyOptions);
-            }
-        });
-        coachButton = new JButton("Coach");
-        coachButton.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseClicked(MouseEvent e) {
-                userType = USER.COACH;
-                dropDownMenu(dummyOptions);
-            }
-        });
-        refereeButton = new JButton("Referee");
-        refereeButton.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseClicked(MouseEvent e) {
-                userType = USER.REFEREE;
-                dropDownMenu(dummyOptions);
-            }
-        });
-        playerButton = new JButton("Player");
-        playerButton.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseClicked(MouseEvent e) {
-                userType = USER.PLAYER;
-                dropDownMenu(dummyOptions);
-            }
-        });
 
 
         JPanel coachPanel = new JPanel();
